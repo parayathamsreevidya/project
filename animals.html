@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="project2.css">
+        <title>CHILDREN PALACE</title>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="heading">
+                 <h1>CHILDREN PALACE</h1>
+            </div>
+            <div class="contents">
+                    <div class="animals">
+                        <p>ANIMALS</p>
+                        <button type="menu" class="buton" onclick="play('cat')">CAT</button>
+                        <button type="menu" class="buton" onclick="play('chicken')">CHICKEN</button>
+                        <button type="menu" class="buton" onclick="play('cockerel')">COCKEREL</button>
+                        <button type="menu" class="buton" onclick="play('cow')">COW</button>
+                        <button type="menu" class="buton" onclick="play('crow')">CROW</button>
+                        <button type="menu" class="buton" onclick="play('dog')">DOG</button>
+                        <button type="menu" class="buton" onclick="play('duck')">DUCK</button>
+                        <button type="menu" class="buton" onclick="play('elephant')">ELEPHANT</button>
+                        <button type="menu" class="buton" onclick="play('frog')">FROG</button>
+                        <button type="menu" class="buton" onclick="play('horse')">HORSE</button>
+                        <button type="menu" class="buton" onclick="play('turkey')">TURKEY</button>
+                        <button type="menu" class="buton" onclick="play('lion')">LION</button>
+                        <button type="menu" class="buton" onclick="play('tiger')">TIGER</button>
+                        <button type="menu" class="buton" onclick="play('penguin')">PENGUIN</button>
+                        
+                    </div> 
+                    <div class="ig">
+                        <img id="animal" src="animals/anima.jpg" class="pic">
+                        <img id="animal" src="animals/ani.jpg" class="pic">
+                        <div id="audio">
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+            function play( animalName ) {
+              document.getElementById("audio").innerHTML = "<audio id='"+animalName+"' src='animals/"+animalName+".mp3'></audio>";
+              var audio = document.getElementById(animalName);
+              audio.play();
+            }
+          </script>
+    </body>
+</html>
